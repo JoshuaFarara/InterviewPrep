@@ -5,6 +5,22 @@ This repository is all about interview preparation, solving problems on HackerRa
 ## HackerRank:
 https://www.hackerrank.com/
 
+### Week1
+    Plus Minus
+    Mini-Max Sum
+    Time Convers
+    Sparse Arrays
+    Lonely Integer
+    Flipping bits
+    
+    
+    
+    
+    XOR Strings 2
+   
+### Week3
+### Week4
+
 ## Leetcode
 https://leetcode.com/
 
