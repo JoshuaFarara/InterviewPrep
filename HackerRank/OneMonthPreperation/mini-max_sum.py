@@ -49,6 +49,18 @@ Need help to get started? Try the Solve Me First problem
 
 '''
 
+# Methodology for Solving
+'''
+MAIN Objective: summing exactly four of the five integers
+1. Must loop through the array to access and analyze each element
+    1.1 - recall array indexing starts from 0, and len(arr) is the total elements within that array
+2. This requirement means that any of the 4 integers in the array, have a sum that will be the minimum and maximum = meaning slicing will be necessary
+    2.1 - arr[:i]: This slices the array arr from the beginning up to (but not including) the index i, effectively excluding the ith element.
+    2.2 - arr[i+1:]: This slices the array arr from the index i+1 till the end, effectively excluding the ith element as well. 
+          This allows you to extract a portion of the array starting from a specified index till the end.
+
+'''
+
 import math
 import os
 import random
@@ -66,8 +78,8 @@ def main():
     arr2 = [7, 69, 2, 221, 8974]
     # print(arr[])
     
-    miniMaxSum(arr)
-    miniMaxSum(arr2)
+    # miniMaxSum(arr)
+    miniMaxSum2(arr2)
     # miniMaxSum(arr
 
 #attempt number one
@@ -86,13 +98,15 @@ def miniMaxSum(arr):
 # attempt number two
 def miniMaxSum2(arr):
     
-    minSum = 0
-    maxSum = 0
+    minSum = sum(arr[:4])
+    maxSum = sum(arr[:4])
 
     for n in range(len(arr)):
-        minSum += arr[n]
-    for n in range(len(arr)):
-        maxSum += arr[n]
+        current_sum = sum(arr[:n] + arr[n+1:])
+        if current_sum < minSum:
+            minSum = current_sum
+        if current_sum > maxSum:
+            maxSum = current_sum
 
     print(minSum, maxSum)
 
