@@ -49,11 +49,16 @@ import sys
 
 
 def main():
-    s = input()
+    # s = input()
 
-    result = timeConversion(s)
+    # result = timeConversion(s)
 
-    print(result)
+    # print(result)
+
+    time_format_am, time_format_pm = '00:00:00AM', '00:00:00PM'
+    print(time_format_am[8:])
+    for i in time_format_am:
+        print(time_format_am[i])
 
 #
 # Complete the 'timeConversion' function below.
@@ -62,9 +67,12 @@ def main():
 # The function accepts STRING s as parameter.
 #
 
+
+
 def timeConversion(s):
-    # Write your code here
-    pass
+    time = ' '
+
+    # if time 
 
 if __name__ == '__main__':
     # fptr = open(os.environ['OUTPUT_PATH'], 'w')
