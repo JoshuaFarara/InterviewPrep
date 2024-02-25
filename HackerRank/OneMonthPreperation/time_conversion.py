@@ -57,8 +57,9 @@ def main():
 
     time_format_am, time_format_pm = '00:00:00AM', '00:00:00PM'
     print(time_format_am[8:])
-    for i in time_format_am:
-        print(time_format_am[i])
+    
+    # for i in time_format_am:
+    #     print(time_format_am[i])
 
 #
 # Complete the 'timeConversion' function below.
